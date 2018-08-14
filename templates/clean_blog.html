@@ -68,14 +68,13 @@
 
     <!-- Main Content -->
     <div class="container">
-        <form class="form-inline justify-content-center">
-            <input type="email" name="email" class="form-control mr-2" placeholder="Enter your email...">
-            <button type="submit" class="btn btn-primary">Sign up</button>
-        </form>
-
+        {% block content %}
+        {% endblock %}
         <div class="row">
-            {% block content %}
-            {% endblock %}
+            <form class="form-inline justify-content-center">
+                <input type="email" name="email" class="form-control mb-2 mr-sm-2" placeholder="Enter your email...">
+                <button type="submit" class="btn btn-primary mb-2">Sign up</button>
+            </form>
         </div>
     </div>
 

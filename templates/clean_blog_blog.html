@@ -1,62 +1,62 @@
 {% extends "clean_blog.html" %}
 {% block content %}
-<div class="col-lg-8 col-md-10 mx-auto">
-  <div class="post-preview">
-    <a href="post.html">
-      <h2 class="post-title">
-        Man must explore, and this is exploration at its greatest.
-      </h2>
-      <h3 class="post-subtitle">
-        Problems look mighty small from 150 miles up.
-      </h3>
-    </a>
-    <p class="post-meta">Posted by
-      <a href="#">Keenan Cronyn</a>
-      on September 24, 2018</p>
-  </div>
-  <hr>
-  <div class="post-preview">
-    <a href="post.html">
-      <h2 class="post-title">
-        If only you knew the power of the dark side.
-      </h2>
-    </a>
-    <p class="post-meta">Posted by
-      <a href="#">Lord Vader</a>
-      on September 18, 2018</p>
-  </div>
-  <hr>
-  <div class="post-preview">
-    <a href="post.html">
-      <h2 class="post-title">
-        Just one squeeze
-      </h2>
-      <h3 class="post-subtitle">
-        President... Ha! What a joke. President. President of what? *His* fan club! How they love him! Look at him, lying asleeeeep. The idol of millions. He's a fool! A sad, silly little fool. How easily I could end the farce... with these hands! These DIRTY hands! AND WITH THESE HANDS I HOLD THE FATE OF MILLIONS! They think he's a god, but he's as mortal as we. I know! Just one squeeze... then it's over. [Ren moves toward Stimpy menacingly]
-      </h3>
-    </a>
-    <p class="post-meta">Posted by
-      <a href="#">Ren</a>
-      on August 24, 2018</p>
-  </div>
-  <hr>
-  <div class="post-preview">
-    <a href="post.html">
-      <h2 class="post-title">
-        It's one of those days.
-      </h2>
-      <h3 class="post-subtitle">
-        You're having another one of those days.
-      </h3>
-    </a>
-    <p class="post-meta">Posted by
-      <a href="#">Barry Chuckle</a>
-      on July 8, 2018</p>
-  </div>
-  <hr>
-  <!-- Pager -->
-  <div class="clearfix">
-    <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-  </div>
+<div class="row">
+    <div class="col">
+      <div class="post-preview">
+        <a href="post.html">
+          <h2 class="post-title">
+            Man must explore, and this is exploration at its greatest.
+          </h2>
+          <h3 class="post-subtitle">
+            Problems look mighty small from 150 miles up.
+          </h3>
+        </a>
+        <p class="post-meta">Posted by
+          <a href="#">Keenan Cronyn</a>
+          on September 24, 2018</p>
+      </div>
+      <div class="post-preview">
+        <a href="post.html">
+          <h2 class="post-title">
+            If only you knew the power of the dark side.
+          </h2>
+        </a>
+        <p class="post-meta">Posted by
+          <a href="#">Lord Vader</a>
+          on September 18, 2018</p>
+      </div>
+      <div class="post-preview">
+        <a href="post.html">
+          <h2 class="post-title">
+            Just one squeeze
+          </h2>
+          <h3 class="post-subtitle">
+            President... Ha! What a joke. President. President of what? *His* fan club! How they love him! Look at him, lying asleeeeep. The idol of millions. He's a fool! A sad, silly little fool. How easily I could end the farce... with these hands! These DIRTY hands! AND WITH THESE HANDS I HOLD THE FATE OF MILLIONS! They think he's a god, but he's as mortal as we. I know! Just one squeeze... then it's over. [Ren moves toward Stimpy menacingly]
+          </h3>
+        </a>
+        <p class="post-meta">Posted by
+          <a href="#">Ren</a>
+          on August 24, 2018</p>
+      </div>
+      <div class="post-preview">
+        <a href="post.html">
+          <h2 class="post-title">
+            It's one of those days.
+          </h2>
+          <h3 class="post-subtitle">
+            You're having another one of those days.
+          </h3>
+        </a>
+        <p class="post-meta">Posted by
+          <a href="#">Barry Chuckle</a>
+          on July 8, 2018</p>
+      </div>
+    </div>
+</div>
+<div class="row">
+    <form class="form-inline" action="." method="POST">
+    <textarea name="contents" class="form-control mb-2 mr-sm-2" placeholder="Enter a comment"></textarea>
+    <input type="submit" class="btn btn-success mb-2" value="Post comment">
+    </form>
 </div>
 {% endblock %}
